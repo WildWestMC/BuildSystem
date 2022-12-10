@@ -28,3 +28,8 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew clean build
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+         name: Gunshell
+         path: ./build/libs/*.jar
