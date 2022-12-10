@@ -1,4 +1,4 @@
-name: Build main
+name: Build main and release artifacts
 
 on: [ push, pull_request ]
 
